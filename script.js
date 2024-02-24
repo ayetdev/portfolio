@@ -1,0 +1,2 @@
+history.scrollRestoration = 'manual';
+
