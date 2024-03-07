@@ -8,10 +8,13 @@
 
 html {
     scrollbar-width: thin;
-    /* scroll-behavior: smooth; */
+    scroll-behavior: smooth;
+    scroll
 }
 
 body {
+    background-color: #86ffe2;
+    background-image: linear-gradient(90deg, #86ffe2 53%, #dcf8f2 100%);
     height: 100%;
     width: 100%;
     overflow-x: hidden;
@@ -20,24 +23,31 @@ body {
 
 :root {
     --main-color:#2d2e32;
-    --paragraph-color: rgb(48, 48, 48);
+    --paragraph-color: rgb(58, 57, 57);
     --hover-color: rgb(31, 30, 31);
     --icon-color: rgb(83, 83, 83);
 }
 
+
+/* Start Preloader */
+
+/* End Preloader */
+
+/* Start Navbar */
+
 nav {
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    background-color: #faf9f9;
+    /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); */
+    background: transparent;
     width: 100%;
-    height: 70px;
+    height: 120px;
     top: 0;
     position: fixed;
     z-index: 1;
     /* background-color: #f2f1f1; */
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
-    gap: 200px;
+    /* gap: 200px; */
 }
 
 nav h4 {
@@ -49,12 +59,18 @@ nav h4 {
 }
 
 nav ul {
-    gap: 22px;
+    border-radius: 40px;
+    /* background-color: rgb(51, 192, 169); */
+    padding: 20px;
+    gap: 0px;
     display: flex;
 }
 
 nav ul li a {
-    font-size: 13px;
+    border-radius: 30px;
+    padding: 10px 30px;
+    text-align: center;
+    font-size: 18px;
     font-weight: 500;
     color: var(--paragraph-color);
 }
@@ -75,6 +91,7 @@ nav h4:hover,
 nav ul li a:hover,
 nav .contact-navbar a:hover {
 
+    background-color: rgb(247, 245, 245);
     color: var(--hover-color);
     transition: 0.2s ease-in;
 }
@@ -519,7 +536,7 @@ nav .contact-navbar a:hover {
 .contact-me-profile .profile-image {
 
     margin-top: 15px;
-    outline: green 1px solid;
+    outline: rgb(0, 0, 0) 1px solid;
     width: 150px;
     height: 150px;
     border-radius: 50%;
@@ -579,6 +596,12 @@ nav .contact-navbar a:hover {
     height: 50px;
     color: white;
     cursor: pointer;
+}
+
+.contact-me-form button:hover {
+
+    background-color: var(--hover-color);
+    transition: 0.5s ease;
 }
 
 
