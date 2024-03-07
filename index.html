@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="fontawesome/css/font-awesome.min.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,12 +21,30 @@
 </head>
 
 <body>
+
+    <!-- Preloader Website -->
+
+    <div class="preloader">
+        <!-- <div class="box1">
+
+        </div>
+        <div class="box2">
+
+        </div>
+        <div class="box3">
+
+        </div> -->
+    </div>
+    <!-- End Preloader -->
     <!-- Navbar -->
     <nav data-aos="fade-down" data-aos-duration="1500">
-        <a href="#home">
+        <!-- <a href="#">
             <h4>A</h4>
-        </a>
+        </a> -->
         <ul>
+            <li>
+                <a href="#home">Home</a>
+            </li>
             <li>
                 <a href="#about">About</a>
             </li>
@@ -370,6 +389,13 @@
     <!--  -->
 
 
+    <script>
+        window.addEventListener('load', function() {
+          var preloader = document.querySelector('.preloader');
+          preloader.style.display = 'none';
+        });
+      </script>
+      
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js"></script>
